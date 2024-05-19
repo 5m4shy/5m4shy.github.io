@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Isca-Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="JobOffers.html">Offerte di Lavoro</a></li>
+                <li><a href="#">Come Funziona</a></li>
+                <li><a href="WhoWeAre.html">Chi Siamo</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content animate">
+            <h1>DIVENTA UN LAVORATORE</h1>
+            <p>Candidati ora per ricevere un nuovo lavoro domani</p>
+            <div>
+                <button id="applyButton" type="button"><span></span>CANDIDATI</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.content').classList.add('animate');
+
+            // Aggiungi gestore di evento per il bottone
+            document.getElementById('applyButton').addEventListener('click', function() {
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html>
