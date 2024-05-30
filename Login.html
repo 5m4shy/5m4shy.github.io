@@ -36,10 +36,7 @@
         if (isReLogin) reLoginParagraph.innerText = reLoginPhrase;
         
         document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Impedisce l'invio del modulo
-
-            // Qui puoi aggiungere il codice per verificare il login.
-            // Se il login è corretto, reindirizza alla pagina JobOffers.html
+            event.preventDefault(); 
             window.location.href = next;
         });
     </script>
