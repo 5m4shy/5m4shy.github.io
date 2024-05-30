@@ -20,19 +20,9 @@
             <h1>DIVENTA UN LAVORATORE</h1>
             <p>Candidati ora per ricevere un nuovo lavoro domani</p>
             <div>
-                <button id="applyButton" type="button"><span></span>CANDIDATI</button>
+                <button class="apply-button" onclick="window.location.href = 'Login.html?isReLogin=true&next=candidates/graphic_designer.html';"><span>Candidati Ora</span></button>
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelector('.content').classList.add('animate');
-
-            // Aggiungi gestore di evento per il bottone
-            document.getElementById('applyButton').addEventListener('click', function() {
-                window.location.href = 'Login.html';
-            });
-        });
-    </script>
 </body>
 </html>
