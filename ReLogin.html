@@ -24,23 +24,12 @@
         </div>
     </div>
 
-   <script>
-        const url = new URL(window.location.href);
-        const isReLogin = url.searchParams.get("isReLogin") ?? false;
-        const next = url.searchParams.get("next") ?? "";
-        const reLoginParagraph = document.getElementById("relogin");
-        
-        const reLoginPhrase = "se hai già effettuato l'accesso devi inserire nuovamente i tuoi dati";
-
-        
-        if (isReLogin) reLoginParagraph.innerText = reLoginPhrase;
-        
+    <script>
         document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault(); // Impedisce l'invio del modulo
 
-            // Qui puoi aggiungere il codice per verificare il login.
-            // Se il login è corretto, reindirizza alla pagina JobOffers.html
-            window.location.href = next;
+        
+            window.location.href = 'software_developer.html';
         });
     </script>
 </body>
