@@ -29,30 +29,36 @@
                 <p class="company">Tech Solutions S.p.A.</p>
                 <p class="location">Milano, Italia</p>
                 <p class="description">Stiamo cercando un Software Developer con esperienza in Java e Spring Framework.</p>
-                <button class="apply-button">Candidati Ora</button>
+                <button class="apply-button" id="button1">Candidati Ora</button>
             </div>
             <div class="job">
                 <h2>Graphic Designer</h2>
                 <p class="company">Creative Studio</p>
                 <p class="location">Roma, Italia</p>
                 <p class="description">Cerchiamo un Graphic Designer creativo e con esperienza nella progettazione di materiale pubblicitario.</p>
-                <button class="apply-button">Candidati Ora</button>
+                <button class="apply-button" id="button2">Candidati Ora</button>
             </div>
             <div class="job">
                 <h2>Project Manager</h2>
                 <p class="company">Business Corp</p>
                 <p class="location">Torino, Italia</p>
                 <p class="description">Ricerchiamo un Project Manager con esperienza nella gestione di progetti IT.</p>
-                <button class="apply-button">Candidati Ora</button>
+                <button class="apply-button" id="button3">Candidati Ora</button>
             </div>
         </section>
     </main>
 
     <script>
-        document.querySelectorAll('.apply-button').forEach(function(button) {
-            button.addEventListener('click', function() {
-                window.location.href = '/logins/ReLogin2.0.html';
-            });
+        document.getElementById('button1').addEventListener('click', function() {
+            window.location.href = '/logins/ReLogin.html';
+        });
+
+        document.getElementById('button2').addEventListener('click', function() {
+            window.location.href = '/logins/ReLogin2.0.html';
+        });
+
+        document.getElementById('button3').addEventListener('click', function() {
+            window.location.href = '/logins/ReLogin2.0.html';
         });
     </script>
 </body>
