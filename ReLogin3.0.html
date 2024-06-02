@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Isca-Website</title>
+    <link rel="stylesheet" href="style4.0.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box">
+            <p>se hai già effettuato l'accesso devi inserire nuovamente i tuoi dati</p>
+            <h1>Login</h1>
+            <form action="login_process.php" method="post">
+                <div class="textbox">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+                </div>
+                <div class="textbox">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Inserisci la tua password" required>
+                </div>
+                <button type="submit" class="btn">Accedi</button>
+            </form>
+            <p>Non hai un account? <a href="signup.html">Registrati</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impedisce l'invio del modulo
+
+            // Qui puoi aggiungere il codice per verificare il login.
+            // Se il login è corretto, reindirizza alla pagina JobOffers.html
+            window.location.href = '/candidates/Project_Manager.html';
+        });
+    </script>
+</body>
+</html>
